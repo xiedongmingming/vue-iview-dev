@@ -1,17 +1,49 @@
-<!DOCTYPE html>
 <html lang="zh-CN">
 
+!-- 生成首页的模板 -->
 <head>
-    <title>iView project</title>
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
     <meta charset="UTF-8">
+
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+    <META HTTP-EQUIV="expires" CONTENT="0">
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+
     <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[0] %>">
+
+    <script>
+
+		var _hmt = _hmt || [];
+
+		(function () {
+
+			var hm = document.createElement("script");
+
+			hm.src = "https://hm.baidu.com/hm.js?19dfe079b23105736187b48d8f380197";
+
+			var s = document.getElementsByTagName("script")[0];
+
+			s.parentNode.insertBefore(hm, s);
+
+		})();
+
+    </script>
+
 </head>
 
 <body>
-    <div id="app"></div>
-    <script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[0] %>"></script>
-    <script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[1] %>"></script>
+
+<div id="app"></div>
+
+<script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[0] %>"></script>
+<script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[1] %>"></script>
+
 </body>
 
 </html>

@@ -1,6 +1,15 @@
 {
-  "presets": [
-    ["es2015", { "modules": false }]
-  ],
-  "plugins": ["transform-object-rest-spread","transform-vue-jsx","syntax-dynamic-import"]
+	"presets": [
+		[
+			"es2015",
+			{
+				"modules": false
+			}
+		]
+	],
+	"plugins": [
+		"transform-object-rest-spread",
+		"transform-vue-jsx",
+		"syntax-dynamic-import"
+	]
 }

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import env from '../config/env';
+// import env from '../config/env';
 import _ from 'lodash';
 import  Vue from 'vue';
 
